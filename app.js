@@ -19,10 +19,16 @@ app.set('view engine', 'ejs');
 // db
 let booksDb = [];
 
+// render booksInventory data from booksDb
 app.get("/", (req, res) => {
-  res.render("home");
+  res.render("home", {booksDb});
+});
+
+// render the add new book page
+app.get("/add", (req, res) => {
+  res.render("newBook");
 });
 
 app.listen(3000, () => {
-  console.log("Connected to port 6000");
+  console.log("Connected to port 3000");
 })
