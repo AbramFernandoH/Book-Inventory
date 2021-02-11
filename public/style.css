@@ -1,0 +1,16 @@
+body{
+  height: 1000px;
+}
+
+header{
+  padding: 5%;
+}
+
+.welcomeTxt{
+  padding-top: 3%;
+}
+
+footer{
+  padding: 1% 3%;
+  background-color: lightskyblue;
+}
