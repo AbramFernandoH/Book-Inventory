@@ -15,35 +15,38 @@
 
     <form action="/" method="POST">
       <div class="row">
-      <div class="mb-3 col-md-6">
-        <label for="bTitle" class="form-label">Title : </label>
-        <input type="text" class="form-control" id="bTitle" name="title">
+        <div class="mb-3 col-md-6">
+          <label for="bTitle" class="form-label">Title : </label>
+          <input type="text" class="form-control" id="bTitle" name="title">
+        </div>
+        <div class="mb-3 col-md-6">
+          <label for="bAuthor" class="form-label">Author : </label>
+          <input type="text" class="form-control" id="bAuthor" name="author">
+        </div>
+        <div class="mb-3 col-md-6">
+          <label for="bRD" class="form-label">Release Date : </label>
+          <input type="text" class="form-control" id="bRD" name="rDate">
+        </div>
+        <div class="mb-3 col-md-6">
+          <label for="bRate" class="form-label">Rating : </label>
+          <input type="text" class="form-control" id="bRate" name="rating">
+        </div><div class="mb-3 col-md-6">
+          <label for="bGenre" class="form-label">Genre : </label>
+          <input type="text" class="form-control" id="bGenre" name="genre">
+        </div>
+        <div class="mb-3 col-md-6">
+          <label for="formImg" class="form-label">Poster</label>
+          <input class="form-control" type="file" id="formImg" name="poster">
+        </div>
+        <div class="mb-3">
+          <label for="bDesc" class="form-label">Description : </label>
+          <textarea class="form-control" id="bDesc" rows="3" name="description"></textarea>
+        </div>
       </div>
-      <div class="mb-3 col-md-6">
-        <label for="bAuthor" class="form-label">Author : </label>
-        <input type="text" class="form-control" id="bAuthor" name="author">
+      <div class="tmb">
+        <button class="btn btn-warning col-md-3" type="submit">Add Book to Inventory</button>
       </div>
-      <div class="mb-3 col-md-6">
-        <label for="bRD" class="form-label">Release Date : </label>
-        <input type="text" class="form-control" id="bRD" name="rDate">
-      </div>
-      <div class="mb-3 col-md-6">
-        <label for="bRate" class="form-label">Rating : </label>
-        <input type="text" class="form-control" id="bRate" name="rating">
-      </div><div class="mb-3 col-md-6">
-        <label for="bGenre" class="form-label">Genre : </label>
-        <input type="text" class="form-control" id="bGenre" name="genre">
-      </div>
-      <div class="mb-3 col-md-6">
-        <label for="formImg" class="form-label">Poster</label>
-        <input class="form-control" type="file" id="formImg" name="poster">
-      </div>
-      <div class="mb-3">
-        <label for="bDesc" class="form-label">Description : </label>
-        <textarea class="form-control" id="bDesc" rows="3" name="description"></textarea>
-      </div>
-      </div>
-      <button class="btn btn-warning col-md-3 tmb" type="submit">Add Book to Inventory</button>
+      
     </form>
   </section>
 

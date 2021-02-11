@@ -1,14 +1,16 @@
 const express = require('express');
 const path = require('path');
 const methodOverride = require('method-override');
-// untuk men generate id
+// generate id
 const {v4: uuid} = require('uuid');
 const app = express();
 
-// parse data dari form agar bisa diakses req.body
+// parse data from form so can be access by req.body
 app.use(express.urlencoded({extended: true}));
 // parse json dari body
 app.use(express.json());
+// set static file to be inside public folder
+app.use(express.static(path.join(__dirname, 'public')))
 // agar bisa menipu form untuk melakukan put/patch/delete request
 app.use(methodOverride('_method'));
 // agar bisa dijalankan dari directory manapun
