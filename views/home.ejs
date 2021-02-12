@@ -15,7 +15,7 @@
               <div class="card-body">
                 <h5 class="card-title"><%= book.title %></h5>
                 <p class="card-text">Release Date : <%= book.rDate %></p>
-                <p class="card-text">Description : <%= (book.description).slice(0, 99) %>...<a href="">See More</a></p>
+                <p class="card-text">Description : <%= (book.description).slice(0, 99) %>...<a href="/book/<%= book.id %>">See More</a></p>
               </div>
             </div>
           </div>

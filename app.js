@@ -38,6 +38,14 @@ app.post("/", (req, res) => {
   res.redirect("/");
 });
 
+// render book details  
+app.get("/book/:id", (req, res) => {
+  const { id } = req.params;
+  // find book id to render that particular book page
+  const books = booksDb.find(book => book.id === id);
+  res.render("details", {books});
+});
+
 app.listen(3000, () => {
   console.log("Connected to port 3000");
 })
