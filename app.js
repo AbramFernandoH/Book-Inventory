@@ -31,6 +31,13 @@ app.get("/add", (req, res) => {
   res.render("newBook");
 });
 
+// post data from form and push it to db
+app.post("/", (req, res) => {
+  const { title, author, rDate, rating, genre, poster, description } = req.body;
+  booksDb.push({ id: uuid(), title, author, rDate, rating, genre, poster, description });
+  res.redirect("/");
+});
+
 app.listen(3000, () => {
   console.log("Connected to port 3000");
 })
