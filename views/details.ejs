@@ -5,6 +5,11 @@
       <p><%= books.rating %></p>
       <p><%= books.genre %></p>
       <p><%= books.description %> </p>
+      <form action="/book/<%= books.id %>?_method=DELETE" method="post">
+        <div class="tmb">
+          <button class="btn btn-danger">Delete this book</button>
+        </div>
+      </form>
   </section>
 
 <%- include('partials/footer') %>

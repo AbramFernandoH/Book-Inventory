@@ -46,6 +46,14 @@ app.get("/book/:id", (req, res) => {
   res.render("details", {books});
 });
 
+// delete book
+app.delete("/book/:id", (req, res) => {
+  const { id } = req.params;
+  // return array that have all books except this id
+  booksDb = booksDb.filter(book => book.id !== id);
+  res.redirect("/");
+})
+
 app.listen(3000, () => {
   console.log("Connected to port 3000");
 })
